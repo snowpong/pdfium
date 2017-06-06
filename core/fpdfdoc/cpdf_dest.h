@@ -10,6 +10,10 @@
 #include "core/fxcrt/fx_string.h"
 #include "core/fxcrt/fx_system.h"
 
+#ifdef GetObject
+#undef GetObject
+#endif
+
 class CPDF_Document;
 class CPDF_Object;
 

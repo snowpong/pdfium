@@ -13,6 +13,9 @@
 
 #if _FXM_PLATFORM_ == _FXM_PLATFORM_WINDOWS_ || (_FXM_PLATFORM_ == _FXM_PLATFORM_QT_ && defined(Q_OS_WIN))
 #include <direct.h>
+#ifdef GetObject
+#undef GetObject
+#endif
 
 class CFindFileDataA;
 typedef CFindFileDataA FX_FileHandle;
@@ -155,6 +158,10 @@ class IFX_FileAccess : public CFX_Retainable {
 #endif  // PDF_ENABLE_XFA
 
 #if _FXM_PLATFORM_ == _FXM_PLATFORM_WINDOWS_ || (_FXM_PLATFORM_ == _FXM_PLATFORM_QT_ && defined(Q_OS_WIN))
+#include <windows.h>
+#ifdef GetObject
+#undef GetObject
+#endif
 class CFindFileData {
  public:
   virtual ~CFindFileData() {}

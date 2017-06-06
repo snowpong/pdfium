@@ -24,6 +24,7 @@
 #include "core/fxcodec/fx_codec.h"
 #include "core/fxcrt/fx_memory.h"
 #include "core/fxcrt/fx_safe_types.h"
+#include "core/fxge/cfx_windowsdevice.h"
 #include "core/fxge/cfx_fxgedevice.h"
 #include "core/fxge/cfx_gemodule.h"
 #include "fpdfsdk/cpdfsdk_formfillenvironment.h"

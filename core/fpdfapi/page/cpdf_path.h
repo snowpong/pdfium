@@ -13,6 +13,10 @@
 #include "core/fxge/cfx_pathdata.h"
 #include "core/fxge/cfx_renderdevice.h"
 
+#ifdef GetObject
+#undef GetObject
+#endif
+
 class CPDF_Path {
  public:
   CPDF_Path();

@@ -68,6 +68,10 @@
 #include <libkern/OSAtomic.h>
 #endif
 
+#if _FXM_PLATFORM_ == _FXM_PLATFORM_QT_
+#include <QtGlobal>
+#endif
+
 #ifdef __cplusplus
 extern "C" {
 #endif  // __cplusplus

@@ -10,6 +10,10 @@
 #include "core/fxcrt/cfx_retain_ptr.h"
 #include "core/fxcrt/fx_system.h"
 
+#ifdef GetObject
+#undef GetObject
+#endif
+
 // A shared object with Copy on Write semantics that makes it appear as
 // if each one were independent.
 template <class ObjClass>
